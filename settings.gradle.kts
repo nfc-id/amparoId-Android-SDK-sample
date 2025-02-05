@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+        maven {
+            setUrl("https://jitpack.io")
+        }
+        flatDir {
+            dirs("${rootDir}/app/libs")
+        }
+    }
+}
+
+rootProject.name = "My Application"
+include(":app")
+//include(":libs:bice-id-sdk-debug")
