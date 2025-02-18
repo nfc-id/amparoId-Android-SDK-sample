@@ -67,16 +67,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    //implementation project(":bice-id-sdk-debug")
-    //implementation("bice-id-sdk-debug")
-    //implementation(group = "libs", name = "bice-id-sdk-debug", ext = "aar")
-    implementation(files("libs/bice-id-sdk-debug.aar"))
-    // compileOnly(files("libs/bice-id-sdk-debug.aar"))
-
-    //api(libs.aws.auth.cognito) { isTransitive = true }
-    //api(libs.aws.predictions) { isTransitive = true }
-    //api(libs.aws.ui.liveness) { isTransitive = true }
-
+    implementation(files("libs/amparo-id-sdk-debug.aar"))
     implementation(libs.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -85,14 +76,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    // Vision Library
     implementation(libs.text.recognition)
-
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.camera.camera2)
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.view)
-    //implementation("androidx.camera:camera-extensions:1.3.4")
     implementation(libs.androidx.navigation.compose)
     implementation(libs.lottie)
     implementation(libs.lottie.compose)
@@ -103,22 +91,17 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.root.beer)
     implementation(libs.device.names)
-
-    // Face Liveness
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.aws.auth.cognito)
     implementation(libs.aws.predictions)
     implementation(libs.aws.ui.liveness)
     implementation(libs.material3)
-
     implementation("com.github.mhshams:jnbis:1.1.0")
     implementation("commons-io:commons-io:2.11.0")
     implementation("org.bouncycastle:bcpkix-jdk15on:1.65") // do not update
     implementation("net.sf.scuba:scuba-sc-android:0.0.18")
     implementation("com.github.ByteAmaze:RNCryptor-Android:1.0")
     implementation("com.datatheorem.android.trustkit:trustkit:1.1.3")
-
-    //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.android.play:integrity:1.1.0")

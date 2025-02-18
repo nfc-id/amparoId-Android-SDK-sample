@@ -6,9 +6,9 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import cl.bice.id.amparoApi.AmparoIdApi
-import cl.bice.id.amparoApi.AmparoIdProvider
-import cl.bice.id.amparoApi.AmparoIdSdkConfig
+import cl.amparo.id.api.AmparoIdApi
+import cl.amparo.id.api.AmparoIdApiFactory
+import cl.amparo.id.api.AmparoIdSdkConfig
 
 class MainActivity : AppCompatActivity() {
     private var amparoIdSdk : AmparoIdApi? = null
@@ -31,9 +31,13 @@ class MainActivity : AppCompatActivity() {
         val amparoIdSdkConfig = AmparoIdSdkConfig.Builder()
             .setApiKey("API_KEY")
             .setContactCallbackUrl("https://wa.me/56912345678")
+            .setECert("E_CERT")
+            .setKsmKey("KSM_KEY")
+            .setSkmKey("SMK_KEY")
+            .setBaseUrl("API_URL") // without protocol
             .build()
 
-        amparoIdSdk = AmparoIdProvider.create()
+        amparoIdSdk = AmparoIdApiFactory.create()
         amparoIdSdk!!.startActivityForResult(this@MainActivity, amparoIdSdkConfig, amparoLauncher)
     }
 }
