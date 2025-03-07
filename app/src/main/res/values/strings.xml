@@ -1,5 +1,35 @@
 <resources>
     <string name="app_name">My Application</string>
+    <!-- Amparo ID SDK -->
     <string name="amparo_id_sdk_success_message_1">¡Listo!</string>
     <string name="amparo_id_sdk_success_message_2">Lo hiciste muy bien.</string>
+    <string name="amparo_id_sdk_error_no_verifications">No tienes verificaciones pendientes</string>
+    <string name="amparo_id_sdk_error_disconnect">No es posible continuar con la verificación</string>
+    <string name="amparo_id_sdk_error_verification_failed">No pudimos verificar tu identidad</string>
+    <string name="amparo_id_sdk_error_incompatible">Lo sentimos, esta app no está disponible para este dispositivo.</string>
+    <string name="amparo_id_sdk_error_timer">¿Necesitas ayuda con este paso?</string>
+    <string name="amparo_id_sdk_error_deprecated">¡Tenemos lista una nueva actualización!</string>
+    <string name="amparo_id_sdk_error_nfc_disabled">Activa el lector de NFC de tu dispositivo móvil</string>
+    <string name="amparo_id_sdk_error_nfc_interrupted">¡Se interrumpió el proceso!</string>
+    <string name="amparo_id_sdk_error_no_verifications_description">No encontramos verificaciones asociadas a tu RUT. Si crees que esto es un error, por favor contáctanos.</string>
+    <string name="amparo_id_sdk_error_disconnect_description">En este momento nuestros servicios no están disponibles, estamos trabajando en resolverlo. Inténtalo más tarde.</string>
+    <string name="amparo_id_sdk_error_without_retry_description">Por favor contacta a un ejecutivo.</string>
+    <string name="amparo_id_sdk_error_with_retry_description">Por favor inténtalo de nuevo o contáctanos.</string>
+    <string name="amparo_id_sdk_error_incompatible_description">Contáctanos para que podamos ayudarte.</string>
+    <string name="amparo_id_sdk_error_deprecated_description">Para que tu App sea aún más segura y la puedas usar, necesitamos que esté actualizada.</string>
+    <string name="amparo_id_sdk_error_disabled_description">En **conexiones del dispositivo**, encuentra **NFC** y habilítalo.</string>
+    <string name="amparo_id_sdk_error_interrupted_description">Si luego de varios intentos el problema persiste, contacta a un ejecutivo.</string>
+    <string name="amparo_id_sdk_error_retry_main_button">Volver a intentar</string>
+    <string name="amparo_id_sdk_error_got_it_main_button">Entendido</string>
+    <string name="amparo_id_sdk_error_incompatible_main_button">Contactar a Servicio al Cliente</string>
+    <string name="amparo_id_sdk_error_timer_main_button">Contactar a Servicio al Cliente</string>
+    <string name="amparo_id_sdk_error_deprecated_main_button">Actualizar App</string>
+    <string name="amparo_id_sdk_error_nfc_disabled_main_button">Abrir conexiones</string>
+    <string name="amparo_id_sdk_error_nfc_interrupted_main_button">Volver a escanear</string>
+    <string name="amparo_id_sdk_error_contact_support_secondary_button">Contactar a Servicio al Cliente</string>
+    <string name="amparo_id_sdk_error_later_secondary_button">En otro momento</string>
+    <string name="amparo_id_sdk_error_dismiss_secondary_button">No, gracias</string>
+    <string name="amparo_id_sdk_error_nfc_bad_reading_1">La cédula de identidad fue **retirada durante el escaneo**.</string>
+    <string name="amparo_id_sdk_error_nfc_bad_reading_2">La carcasa de tu móvil bloquea el escaneo. **Retírala y vuelve a intentarlo.**</string>
+    <string name="amparo_id_sdk_error_nfc_bad_reading_error_description">Por favor, revisa las posibles causas y cuando estés listo, vuelve a intentarlo.</string>
 </resources>

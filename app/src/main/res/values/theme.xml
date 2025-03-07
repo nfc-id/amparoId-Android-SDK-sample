@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AmparoIdSdkTheme">
+        <item name="amparoIdPrimaryMain">@color/purple_200</item>
+        <item name="amparoIdPrimaryLight">@color/purple_500</item>
+    </style>
+</resources>
