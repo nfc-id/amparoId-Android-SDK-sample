@@ -21,7 +21,7 @@ dependencyResolutionManagement {
         }
         maven {
             name = "GitHubPackages"
-            url = uri(System.getenv("AMPARO_ID_SDK_GITHUB_PACKAGES_URL"))
+            url = uri("https://maven.pkg.github.com/nfc-id/amparoId-Android-SDK")
             credentials {
                 username = System.getenv("GITHUB_USER")
                 password = System.getenv("GITHUB_TOKEN")
