@@ -17,6 +17,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
+            setUrl("https://jitpack.io")
+        }
+        maven {
             name = "GitHubPackages"
             url = uri(System.getenv("AMPARO_ID_SDK_GITHUB_PACKAGES_URL"))
             credentials {

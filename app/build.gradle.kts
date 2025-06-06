@@ -66,7 +66,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("cl.amparo.id:amparo-sdk:1.0.0")
+    implementation(libs.material.v1110)
+    implementation(libs.amparo.sdk)
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 }
