@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             .setSkmKey("SKM_KEY")
             .setBaseUrl("BASE_URL") // without protocol
             .setContactSupport { openWhatsApp(phoneNumber, message) }
+            .setDefaultCountry(defaultCountry = "URY")
             .build()
 
         amparoIdSdk = AmparoIdApiFactory.create()
