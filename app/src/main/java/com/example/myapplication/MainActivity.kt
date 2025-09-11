@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             .setBaseUrl("BASE_URL") // without protocol
             .setContactSupport { openWhatsApp(phoneNumber, message) }
             .setDefaultCountry(defaultCountry = "URY")
+            .setNfcMaxTries(1)
             .build()
 
         amparoIdSdk = AmparoIdApiFactory.create()
