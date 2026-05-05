@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.theme
+package id.amparo.sdk.demo.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

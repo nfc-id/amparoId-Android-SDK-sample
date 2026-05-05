@@ -5,14 +5,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_amparo"
+        android:orientation="vertical">
+
+        <!-- contenido -->
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnStartSdk"
         android:layout_width="206dp"
         android:layout_height="140dp"
-        android:text="Start Amparo ID SDK"
+        android:background="@drawable/bg_button_cl"
+        android:text="Start Amparo ID SDK CHL"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
         app:cornerRadius="16.dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnStartURYSdk"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartURYSdk"
+        android:layout_width="206dp"
+        android:layout_height="140dp"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:textFontWeight="800"
+        android:text="Start Amparo ID SDK URY"
+        android:background= "@drawable/bg_button_ur"
+        app:cornerRadius="16.dp"
+        app:layout_constraintTop_toBottomOf="@id/btnStartSdk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/amparo_id"
+        android:elevation="8dp"
+        android:background="@drawable/rounded_square"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

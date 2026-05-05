@@ -1,4 +1,4 @@
-package com.example.myapplication
+package id.amparo.sdk.demo
 
 import org.junit.Test
 

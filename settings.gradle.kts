@@ -30,6 +30,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Application"
+rootProject.name = "Amparo SDK Demo"
 include(":app")
 //include(":libs:bice-id-sdk-debug")
