@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">SDK Demo</string>
     <!-- Amparo ID SDK -->
     <string name="amparo_id_sdk_success_message_1">¡Listo!</string>
     <string name="amparo_id_sdk_success_message_2">Lo hiciste muy bien.</string>
